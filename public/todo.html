@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>todo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="public/javascripts/script.js"></script>
+</head>
+
+
+<!-- The Body -->
+<body>
+
+<div class="container" >
+
+    <h1  style="text-align:center" > My TodoList </h1>
+
+    <!-- The main container -->
+    <div id="mainContainer">
+
+        <div class="row "  style=" text-align: center; display:block;">
+            <p  style="color:Orange; text-align:center"> The user has to type a task and then it is added to the list of ready tasks </p>
+            <!-- add show completed Button -->
+            <button id="completedBtn" style="text-align: center; height:40px; width:200px; font-size: 15px; padding: 10px;
+                 border-radius: 4px;border: 2px solid rgba(0,0,0,0.3); cursor: pointer; margin: 4px 2px;
+                  background-color:lightcyan; ">complete task</button>
+            <br><br>
+        </div>
+
+        <div class="row" style=" text-align: center;">
+            <input class="col-6 col-md-4 w-70" id="inputText" type="text" placeholder="Type your task here.." style=" width: 70%; height:40%;padding: 12px 10px; margin: 8px 0; display: inline-block;
+               border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+            <!-- add "Add" Button -->
+            <button  class="col" id="addBtn" style=" font-size: 15px; padding: 10px; box-shadow: 4px 4px 2px #888888; border-radius: 4px;
+                border: 2px solid rgba(0,0,0,0.3); background-color:lightblue; cursor: pointer; margin: 4px 2px;" >Add</button>
+            <br>
+            <span id="error" style="color: red; padding: 3px; font-size: 15pt;"></span>
+        </div>
+
+        <div class="btn-group-vertical" style=" text-align: center; display: block;" id="unCompletedList" >
+
+        </div> </div>
+
+    <!-- The Secondary container -->
+    <div  id="secondaryContainer" style="display: none; text-align: center">
+        <p  style="color:Orange; text-align:center;"> Completed Tasks:</p>
+        <div class="row "  style=" text-align: center; display: inline-flex;">
+            <button id="backBtn" style="text-align: center; height:40px ;width:200px; font-size: 15px; padding: 10px;
+                 border-radius: 4px;border: 2px solid rgba(0,0,0,0.3); cursor: pointer; margin: 4px 2px;
+                  background-color:lightcyan; ">Back</button>
+        </div>
+        <p></p>
+
+        <div id="completedList"   class = 'group-vertical' style=" text-align: center; display: block"> </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
+
+
